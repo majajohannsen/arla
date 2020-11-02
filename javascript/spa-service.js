@@ -37,10 +37,5 @@ function menuknapvis() {
   nav.classList.add("swing-in-bottom-bck")
 }
 
-function menuKnapGem() {
-  let nav = document.querySelector('nav');
-  nav.classList.remove("show")
 
-
-}
 pageChange(); // called by default when the app is loaded for the first time
