@@ -44,10 +44,10 @@ function prepareMilkProductionData(sustainabilityData) {
   let nationalData = [];
   sustainabilityData.forEach(data => {
     if (data.region === 'north') { // condition testing whether the region is 'north' og 'south'
-      yourData.push(data.herdMilkProduction);
+      yourData.push(data.carbonFootprint);
       quarter.push(data.year);
     } else if (data.region === 'south') {
-      nationalData.push(data.herdMilkProduction);
+      nationalData.push(data.carbonFootprint);
     }
   });
   return {
