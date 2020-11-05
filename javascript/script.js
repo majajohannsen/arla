@@ -68,10 +68,10 @@ function appendMilkProduction(sustainabilityData) {
     type: 'line',
     data: {
       datasets: [
-        // first dataset - north
+        // first dataset - your data
         {
           data: data.yourData,
-          label: 'Milk Production North',
+          label: 'Your Data',
           fill: false,
           borderColor: "#66955C",
           backgroundColor: "#66955C",
@@ -80,9 +80,9 @@ function appendMilkProduction(sustainabilityData) {
           pointHoverBackgroundColor: "#006A38",
           pointHoverBorderColor: "#006A38",
         },
-        // secobd dataset - south
+        // second dataset - national data
         {
-          label: 'Milk Production South',
+          label: 'National Data',
           data: data.nationalData,
           fill: false,
           borderColor: "#006A38",
