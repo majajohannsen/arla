@@ -40,20 +40,20 @@ _dataRef.orderBy("quarter").onSnapshot(snapshotData => {
 // 2: preparing the data
 function prepareMilkProductionData(sustainabilityData) {
   let quarters = [];
-  let yourData = [];
-  let nationalData = [];
+  let yourCarbon = [];
+  let nationalCarbon = [];
   sustainabilityData.forEach(data => {
-    if (data.region === 'north') { // condition testing whether the region is 'north' og 'south'
-      yourData.push(data.carbonFootprint);
+    if (data.dataType === 'yourData') { // condition testing whether the dataType is 'yourData' og 'nationalData'
+      yourCarbon.push(data.carbonFootprint);
       quarters.push(data.quarter);
-    } else if (data.region === 'south') {
-      nationalData.push(data.carbonFootprint);
+    } else if (data.dataType === 'nationalData') {
+      nationalCarbon.push(data.carbonFootprint);
     }
   });
   return {
     quarters,
-    yourData,
-    nationalData
+    yourCarbon,
+    nationalCarbon
   }
 }
 
@@ -70,7 +70,7 @@ function appendMilkProduction(sustainabilityData) {
       datasets: [
         // first dataset - your data
         {
-          data: data.yourData,
+          data: data.yourCarbon,
           label: 'Your Data',
           fill: false,
           borderColor: "#66955C",
@@ -83,7 +83,7 @@ function appendMilkProduction(sustainabilityData) {
         // second dataset - national data
         {
           label: 'National Data',
-          data: data.nationalData,
+          data: data.nationalCarbon,
           fill: false,
           borderColor: "#006A38",
           backgroundColor: "#006A38",
