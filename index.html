@@ -16,8 +16,6 @@
 <body onhashchange="pageChange()">
     <header>
         <a href="#progress"><img src="img/logo.png" alt="logo" class="logo"></a>
-
-
     </header>
 
     <!-- navigation-->
@@ -41,8 +39,12 @@
       <canvas id="milkProduction"></canvas>
 
       <!-- Firebase App SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
     <!--- Load chart.js from CDN --->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 
