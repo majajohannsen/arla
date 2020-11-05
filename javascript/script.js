@@ -98,4 +98,3 @@ function appendMilkProduction(sustainabilityData) {
     }
   });
 }
-
