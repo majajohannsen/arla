@@ -39,19 +39,19 @@ _dataRef.orderBy("year").onSnapshot(snapshotData => {
 
 // 2: preparing the data
 function prepareMilkProductionData(sustainabilityData) {
-  let quarter = [];
+  let quarters = [];
   let yourData = [];
   let nationalData = [];
   sustainabilityData.forEach(data => {
     if (data.region === 'north') { // condition testing whether the region is 'north' og 'south'
       yourData.push(data.herdMilkProduction);
-      quarter.push(data.year);
+      quarters.push(data.year);
     } else if (data.region === 'south') {
       nationalData.push(data.herdMilkProduction);
     }
   });
   return {
-    quarter,
+    quarters,
     yourData,
     nationalData
   }
@@ -94,7 +94,7 @@ function appendMilkProduction(sustainabilityData) {
           type: 'line'
         }
       ],
-      labels: data.quarter
+      labels: data.quarters
     }
   });
 }
