@@ -7,6 +7,11 @@ body {
     Arial,
     sans-serif;
   font-size: 24px;
+  height: 100vh;
+}
+
+#milkProduction {
+  z-index: 5;
 }
 
 .light {
@@ -35,11 +40,10 @@ h1 {
 
 .menu>a>img {
   width: 50%;
-  opacity: 50%;
 }
 
-.menu>a>img:active {
-  opacity: 100%;
+.inaktiv-billede {
+  opacity: 40%;
 }
 
 .menu {
@@ -60,22 +64,25 @@ h1 {
 /* Style the links inside the navigation bar */
 .menu a {
   display: inline-block;
-  color: #006A38;
+  color: #94C4AE;
   text-align: center;
   text-decoration: none;
   margin: 0;
   padding: 0;
   font-size: 0.6em;
-  opacity: 50%;
   margin-bottom: 2%;
 }
 
 .menu>.aktiv {
-  opacity: 100%;
   font-weight: 700;
   font-style: normal;
+  color: #28683E;
 }
 
+.menu>.aktiv-billede {
+  color: #28683E;
+
+}
 
 canvas {
     max-width: 80%;
