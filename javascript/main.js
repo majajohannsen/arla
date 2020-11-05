@@ -1,48 +1,29 @@
 "use strict";
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-let _firebaseConfig = {
-  apiKey: "AIzaSyA2tgrFrgD_lynuFZe1pEAIvyj5VuWO2mw",
-  authDomain: "arla-efda1.firebaseapp.com",
-  databaseURL: "https://arla-efda1.firebaseio.com",
-  projectId: "arla-efda1",
-  storageBucket: "arla-efda1.appspot.com",
-  messagingSenderId: "125864658422",
-  appId: "1:125864658422:web:301bfaf5d676ae19e033d7",
-  measurementId: "G-QS3H91LYXL"
-};
-// Initialize Firebase
-firebase.initializeApp(_firebaseConfig);
-firebase.analytics();
-const _db = firebase.firestore();
-
-
-
 // ========== GLOBAL VARIABLES ========== //
-const _dataRef = _db.collection("sustainabilityData");
-let _sustainabilityData;
+const _dataRef = _db.collection("carbonData");
+let _carbonData;
 
 // 1: data from firebase
 // listen for changes on _dataRef
 _dataRef.orderBy("quarter").onSnapshot(snapshotData => {
-  _sustainabilityData = []; // reset _sustainabilityData
+  _carbonData = []; // reset _carbonData
   snapshotData.forEach(doc => { // loop through snapshotData - like for of loop
     let data = doc.data(); // save the data in a variable
     data.id = doc.id; // add the id to the data variable
-    _sustainabilityData.push(data); // push the data object to the global array _sustainabilityData
+    _carbonData.push(data); // push the data object to the global array _carbonData
   });
-  console.log(_sustainabilityData);
-  appendMilkProduction(_sustainabilityData); //call appendMilkProduction with _sustainabilityData as function argument
+  console.log(_carbonData);
+  appendMilkProduction(_carbonData); //call appendMilkProduction with _carbonData as function argument
 });
 
 
 
 // 2: preparing the data
-function prepareMilkProductionData(sustainabilityData) {
+function prepareMilkProductionData(carbonData) {
   let quarters = [];
   let yourCarbon = [];
   let nationalCarbon = [];
-  sustainabilityData.forEach(data => {
+  carbonData.forEach(data => {
     if (data.dataType === 'yourData') { // condition testing whether the dataType is 'yourData' og 'nationalData'
       yourCarbon.push(data.carbonFootprint);
       quarters.push(data.quarter);
@@ -58,8 +39,8 @@ function prepareMilkProductionData(sustainabilityData) {
 }
 
 //3: appending the chart
-function appendMilkProduction(sustainabilityData) {
-  let data = prepareMilkProductionData(sustainabilityData);
+function appendMilkProduction(carbonData) {
+  let data = prepareMilkProductionData(carbonData);
   console.log(data);
 
   // generate chart
