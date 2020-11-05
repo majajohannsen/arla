@@ -24,7 +24,7 @@ let _sustainabilityData;
 
 // 1: data from firebase
 // listen for changes on _dataRef
-_dataRef.orderBy("year").onSnapshot(snapshotData => {
+_dataRef.orderBy("quarter").onSnapshot(snapshotData => {
   _sustainabilityData = []; // reset _sustainabilityData
   snapshotData.forEach(doc => { // loop through snapshotData - like for of loop
     let data = doc.data(); // save the data in a variable
@@ -44,8 +44,8 @@ function prepareMilkProductionData(sustainabilityData) {
   let nationalData = [];
   sustainabilityData.forEach(data => {
     if (data.region === 'north') { // condition testing whether the region is 'north' og 'south'
-      yourData.push(data.carbonFootprint);
-      quarter.push(data.year);
+      yourData.push(data.herdMilkProduction);
+      quarters.push(data.quarter);
     } else if (data.region === 'south') {
       nationalData.push(data.carbonFootprint);
     }
