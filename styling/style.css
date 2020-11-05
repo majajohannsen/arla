@@ -1,4 +1,78 @@
-html {
-    background-color: #F6F4F4;
-    font-family: ;
+
+  /* Using the fonts + background-color */
+  html,
+  body {
+      background-color: #F6F4F4;
+    font-family: 'Arla InterFace',
+      Helvetica,
+      Arial,
+      sans-serif;
+    font-size: 24px;
+  }
+  
+  .light {
+    font-weight: 300;
+  }
+  
+  .regular {
+    font-weight: 400;
+  }
+  
+  .bold {
+    font-weight: 700;
+  }
+  
+  .arla-strong {
+    font-family: 'ARLA STRONG',
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
+  
+h1 {
+   color:#006A38;
 }
+
+
+
+
+
+
+
+/* ARLA FONTS */
+
+@font-face {
+    font-family: Arla InterFace;
+    src: url(../fonts/ArlaInterFace-Light.woff2) format("woff2"),
+      url(../fonts/ArlaInterFace-Light.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap
+  }
+  
+  @font-face {
+    font-family: Arla InterFace;
+    src: url(../fonts/ArlaInterFace-Regular.woff2) format("woff2"),
+      url(../fonts/ArlaInterFace-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+  }
+  
+  @font-face {
+    font-family: Arla InterFace;
+    src: url(../fonts/ArlaInterFace-Bold.woff2) format("woff2"),
+      url(../fonts/ArlaInterFace-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+  }
+  
+  @font-face {
+    font-family: ARLA STRONG;
+    src: url(../fonts/ARLASTRONG-Regular.woff2) format("woff2"),
+      url(../fonts/ARLASTRONG-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+  }
