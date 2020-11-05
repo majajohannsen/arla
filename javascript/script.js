@@ -39,21 +39,21 @@ _dataRef.orderBy("year").onSnapshot(snapshotData => {
 
 // 2: preparing the data
 function prepareMilkProductionData(sustainabilityData) {
-  let years = [];
-  let milkNorth = [];
-  let milkSouth = [];
+  let quarter = [];
+  let yourData = [];
+  let nationalData = [];
   sustainabilityData.forEach(data => {
     if (data.region === 'north') { // condition testing whether the region is 'north' og 'south'
-      milkNorth.push(data.herdMilkProduction);
-      years.push(data.year);
+      yourData.push(data.herdMilkProduction);
+      quarter.push(data.year);
     } else if (data.region === 'south') {
-      milkSouth.push(data.herdMilkProduction);
+      nationalData.push(data.herdMilkProduction);
     }
   });
   return {
-    years,
-    milkNorth,
-    milkSouth
+    quarter,
+    yourData,
+    nationalData
   }
 }
 
@@ -70,7 +70,7 @@ function appendMilkProduction(sustainabilityData) {
       datasets: [
         // first dataset - north
         {
-          data: data.milkNorth,
+          data: data.yourData,
           label: 'Milk Production North',
           fill: false,
           borderColor: "#66955C",
@@ -83,7 +83,7 @@ function appendMilkProduction(sustainabilityData) {
         // secobd dataset - south
         {
           label: 'Milk Production South',
-          data: data.milkSouth,
+          data: data.nationalData,
           fill: false,
           borderColor: "#006A38",
           backgroundColor: "#006A38",
@@ -94,7 +94,7 @@ function appendMilkProduction(sustainabilityData) {
           type: 'line'
         }
       ],
-      labels: data.years
+      labels: data.quarter
     }
   });
 }
