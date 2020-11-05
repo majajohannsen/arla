@@ -32,104 +32,10 @@ _dataRef.orderBy("year").onSnapshot(snapshotData => {
     _sustainabilityData.push(data); // push the data object to the global array _sustainabilityData
   });
   console.log(_sustainabilityData);
-  appendCows(_sustainabilityData); // call appendCows with _sustainabilityData as function argument
-  appendCarbonFootprint(_sustainabilityData); //call appendCarbonFootprint with _sustainabilityData as function argument
   appendMilkProduction(_sustainabilityData); //call appendMilkProduction with _sustainabilityData as function argument
 });
 
-// 2: preparing the data
-function prepareCowData(sustainabilityData) {
-  let cows = [];
-  let years = [];
-  sustainabilityData.forEach(data => {
-    if (data.region === 'north') { // in this case we only want the data from 'north'
-      cows.push(data.herdYearCows);
-      years.push(data.year);
-    }
-  });
-  return {
-    cows,
-    years
-  }
-}
-//3: appending the chart
-function appendCows(sustainabilityData) {
-  let data = prepareCowData(sustainabilityData);
-  console.log(data);
-  // generate chart
-  let chartContainer = document.querySelector('#cows');
-  let chart = new Chart(chartContainer, {
-    type: 'line',
-    data: {
-      datasets: [{
-        data: data.cows,
-        label: 'Number of Cows',
-        fill: false,
-        borderColor: "#66955C",
-        backgroundColor: "#66955C",
-        pointBackgroundColor: "#006A38",
-        pointBorderColor: "#006A38",
-        pointHoverBackgroundColor: "#006A38",
-        pointHoverBorderColor: "#006A38",
-      }],
-      labels: data.years
-    },
-    options: {
-      scales: {
-        yAxes: [{
-          ticks: {
-            min: (Math.min(...data.cows) - 5),
-            max: (Math.max(...data.cows) + 1)
-          }
-        }]
-      }
-    }
-  });
-}
 
-// 2: preparing the data
-function prepareCarbonFootprintData(sustainabilityData) {
-  // prepare data
-  let carbonFootprint = [];
-  let years = [];
-  sustainabilityData.forEach(data => {
-    if (data.region === 'north') { // in this case we only want the data from 'north'
-      carbonFootprint.push(data.carbonFootprintWholeFarm);
-      years.push(data.year);
-    }
-  });
-
-  return {
-    carbonFootprint,
-    years
-  }
-}
-
-//3: appending the chart
-function appendCarbonFootprint(sustainabilityData) {
-  let data = prepareCarbonFootprintData(sustainabilityData);
-  console.log(data);
-
-  // generate chart
-  let chartContainer = document.querySelector('#carbonFootprint');
-  let chart = new Chart(chartContainer, {
-    type: 'line',
-    data: {
-      datasets: [{
-        data: data.carbonFootprint,
-        label: 'Carbon Footprint WholeFarm',
-        fill: false,
-        borderColor: "#66955C",
-        backgroundColor: "#66955C",
-        pointBackgroundColor: "#006A38",
-        pointBorderColor: "#006A38",
-        pointHoverBackgroundColor: "#006A38",
-        pointHoverBorderColor: "#006A38",
-      }],
-      labels: data.years
-    }
-  });
-}
 
 // 2: preparing the data
 function prepareMilkProductionData(sustainabilityData) {
