@@ -40,20 +40,20 @@ _dataRef.orderBy("year").onSnapshot(snapshotData => {
 // 2: preparing the data
 function prepareMilkProductionData(sustainabilityData) {
   let years = [];
-  let yourData = [];
-  let nationalData = [];
+  let milkNorth = [];
+  let milkSouth = [];
   sustainabilityData.forEach(data => {
     if (data.region === 'north') { // condition testing whether the region is 'north' og 'south'
-      yourData.push(data.herdMilkProduction);
+      milkNorth.push(data.herdMilkProduction);
       years.push(data.year);
     } else if (data.region === 'south') {
-      nationalData.push(data.herdMilkProduction);
+      milkSouth.push(data.herdMilkProduction);
     }
   });
   return {
     years,
-    milkNorth: yourData,
-    milkSouth: nationalData
+    milkNorth,
+    milkSouth
   }
 }
 
