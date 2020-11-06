@@ -1,7 +1,7 @@
 /* Using the fonts + background-color */
 html,
 body {
-  background-color:#F6F4F4;
+  background-color: #F6F4F4;
   font-family: 'Arla InterFace',
     Helvetica,
     Arial,
@@ -106,11 +106,16 @@ canvas {
   grid-gap: 2%;
 }
 
-.et, .to, .tre, .fire, .fem, .seks {
+.et,
+.to,
+.tre,
+.fire,
+.fem,
+.seks {
   border-radius: 70px;
-   margin-bottom: 2%;
-   box-shadow:1px 1px 13px 5px rgba(83,83,83,0.1);
-   text-align: center;
+  margin-bottom: 2%;
+  box-shadow: 1px 1px 13px 5px rgba(83, 83, 83, 0.1);
+  text-align: center;
 }
 
 .et {
@@ -140,7 +145,7 @@ canvas {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  
+
 }
 
 /* Create a custom radio button */
@@ -152,16 +157,16 @@ canvas {
   width: 25px;
   background-color: #eee;
   border-radius: 50%;
-  
+
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.container:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
   background-color: #006A38;
 }
 
@@ -173,18 +178,18 @@ canvas {
 }
 
 /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
+.container input:checked~.checkmark:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 
@@ -198,14 +203,15 @@ canvas {
 }
 
 /*text under DK kort*/
-.regionheader{
+.regionheader {
   text-align: left;
   margin: auto;
   margin-top: 2vh;
   font-size: 25px;
   width: 90%;
 }
-.regiontext{
+
+.regiontext {
   text-align: left;
   width: 90%;
   margin: auto;
@@ -215,19 +221,23 @@ canvas {
 
 /* Procent bars */
 /* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Container for skill bars */
 .barcontainer {
-  width: 90%; /* size of bar */
+  width: 90%;
+  /* size of bar */
   height: 2vh;
-  background-color: #ddd; /* Grey background */
+  background-color: #ddd;
+  /* Grey background */
   border-radius: 50px;
   margin: auto;
   margin-bottom: 1vh;
 }
 
-.barflex{
+.barflex {
   display: flex;
   width: 90%;
   justify-content: space-between;
@@ -235,23 +245,89 @@ canvas {
 }
 
 .skills {
-  text-align: right; /* Right-align text */
-  padding-top: 1px; /* Add top padding */
-  padding-bottom: 1px; /* Add bottom padding */
-  color: white; /* White text color */
+  text-align: right;
+  /* Right-align text */
+  padding-top: 1px;
+  /* Add top padding */
+  padding-bottom: 1px;
+  /* Add bottom padding */
+  color: white;
+  /* White text color */
   height: 2vh;
   border-radius: 50px;
 }
 
-.sjaelland {width: 30%; background-image: linear-gradient(to right, darkgreen, olivedrab);} /* Green */
-.midtjylland {width: 62%; background-image: linear-gradient(to right, darkgreen, olivedrab);} /* Green */
-.syddanmark {width: 19%; background-image: linear-gradient(to right, darkgreen, olivedrab);} /* Green */
-.hovedstaden {width: 71%; background-image: linear-gradient(to right, darkgreen, olivedrab);} /* Green */
-.nordjylland {width: 49%; background-image: linear-gradient(to right, darkgreen, olivedrab);} /* Green */
+.sjaelland {
+  width: 30%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
 
+/* Green */
+.midtjylland {
+  width: 62%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
+.syddanmark {
+  width: 19%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
+.hovedstaden {
+  width: 71%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
+.nordjylland {
+  width: 49%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+.sjaelland {
+  width: 30%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
+.midtjylland {
+  width: 62%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
+.syddanmark {
+  width: 19%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
+.hovedstaden {
+  width: 71%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
+.nordjylland {
+  width: 49%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
+
+/* Green */
+.pernille {
+  width: 110%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
 /* Leaderboard */
 
-.your-farm {
+
+.leaderboard-grid-yourfarm {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -259,11 +335,55 @@ canvas {
   grid-row-gap: 0px;
   background-color: white;
   padding-top: 4%;
+  border-radius: 17px;
+}
+
+
+.leaderboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: white;
+  padding-top: 4%;
+}
+
+.leaderboard-grid-start {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: white;
+  padding-top: 4%;
+  border-radius: 17px 17px 0px 0px;
+}
+
+.leaderboard-grid-slut {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: white;
+  padding-top: 4%;
+  border-radius: 0px 0px 17px 17px;
+}
+
+
+
+
+.leaderboard {
+  box-shadow: 1px 1px 13px 5px rgba(83, 83, 83, 0.1);
+  border-radius: 17px 17px 17px 17px;
 
 }
 
-.leaderboard {
-  box-shadow: 0px 1px 31px -8px rgba(0, 0, 0, 0.57);
+.your-farm-boks {
+  box-shadow: 1px 1px 13px 5px rgba(83, 83, 83, 0.1);
+  border-radius: 17px 17px 17px 17px;
+
 
 }
 
@@ -271,6 +391,11 @@ canvas {
   grid-area: 1 / 1 / 3 / 2;
   text-align: center;
   font-size: 1.3em;
+  color: #28683E;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+
 
 }
 
@@ -278,12 +403,20 @@ canvas {
   grid-area: 1 / 2 / 3 / 4;
   font-size: 1.1em;
   margin-top: 1.2%;
+  color: #3A4443;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 .co2-nummer {
   grid-area: 1 / 4 / 2 / 5;
   text-align: center;
   font-size: 1em;
+  color: #28683E;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 
 }
 
@@ -292,6 +425,19 @@ canvas {
   font-size: 0.4em;
   text-align: center;
   margin-bottom: -1em;
+  color: #3A4443;
+}
+
+.guld {
+  color: #E0BF86;
+}
+
+.soelv {
+  color: #B8D2D5;
+}
+
+.bronze {
+  color: #D6AE93;
 }
 
 
@@ -323,7 +469,7 @@ canvas {
     url(/styling/fonts/ArlaInterFace-Bold.woff) format("woff");
   font-weight: 700;
   font-style: normal;
-  font-display: swap
+  font-display: swap;
 }
 
 @font-face {
