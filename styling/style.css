@@ -225,6 +225,11 @@ canvas {
   box-sizing: border-box
 }
 
+/*Bynavne overskrift over "skills baren" - nordjylland, sjælland osv.*/
+.byer-overskrift{
+  font-family: 'Arla InterFace';
+}
+
 /* Container for skill bars */
 .barcontainer {
   width: 90%;
@@ -262,25 +267,25 @@ canvas {
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .midtjylland {
   width: 62%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .syddanmark {
   width: 19%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .hovedstaden {
   width: 71%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .nordjylland {
   width: 49%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
@@ -291,42 +296,33 @@ canvas {
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .midtjylland {
   width: 62%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .syddanmark {
   width: 19%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .hovedstaden {
   width: 71%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .nordjylland {
   width: 49%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
 
-/* Green */
-.pernille {
-  width: 110%;
-  background-image: linear-gradient(to right, darkgreen, olivedrab);
-}
 
-/* Green */
 /* Leaderboard */
-
-
 .leaderboard-grid-yourfarm {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
