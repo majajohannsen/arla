@@ -40,9 +40,9 @@ h1 {
 }
 
 p {
-  font-size: 0.5em;
-
+  font-size: 0.8em;
 }
+
 
 
 .menu>a>img {
@@ -99,6 +99,101 @@ canvas {
 /* Radio buttons */
 
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2%;
+}
+
+.et,
+.to,
+.tre,
+.fire,
+.fem,
+.seks {
+  border-radius: 70px;
+  margin-bottom: 2%;
+  box-shadow: 1px 1px 13px 5px rgba(83, 83, 83, 0.1);
+  text-align: center;
+}
+
+.et {
+  grid-area: 1/1/2/2;
+
+}
+
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 3%;
+  margin-right: 3%;
+
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 25%;
+  left: 6%;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmark {
+  background-color: #006A38;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+
 /* Danmarks kort */
 .ko-kort {
   display: block;
@@ -132,7 +227,7 @@ canvas {
 
 /* Container for skill bars */
 .barcontainer {
-  width: 85%;
+  width: 90%;
   /* size of bar */
   height: 2vh;
   background-color: #ddd;
@@ -144,7 +239,7 @@ canvas {
 
 .barflex {
   display: flex;
-  width: 85%;
+  width: 90%;
   justify-content: space-between;
   margin: auto;
 }
@@ -162,9 +257,8 @@ canvas {
   border-radius: 50px;
 }
 
-.sjaelland {
-  width: 30%;
-  background-image: linear-gradient(to right, darkgreen, olivedrab);
+width: 30%;
+background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
 /* Green */
@@ -192,7 +286,12 @@ canvas {
 }
 
 /* Green */
+.pernille {
+  width: 110%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
 
+/* Green */
 /* Leaderboard */
 
 

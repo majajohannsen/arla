@@ -36,26 +36,52 @@
         <header>
             <h1>Progress</h1>
             <p>Get an overview of your data, and compare to other Arla farmers. Select the data you want to view.</p>
+
+            <br>
         </header>
         <!--Co2 graf-->
-        <canvas id="milkProduction"></canvas>
+        <canvas id="milkProduction"></canvas><br>
         <!--Radio buttons-->
 
-        <div class="container">
-            <div class="et"></div>
-            <div class="to"></div>
-            <div class="tre"></div>
-            <div class="fire"></div>
-            <div class="frem"></div>
-            <div class="seks"></div>
-        </div>
+        <div class="grid-container">
+            <label class="container et">
+                <p>Carbon footprint</p>
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container to">
+                <p>Feed consumption</p>
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container tre">
+                <p>Milk production</p>
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fire">
+                <p>Self-sufficient feed</p>
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container fem">
+                <p>kWh Electricity</p>
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container seks">
+                <p>Fuel consumption</p>
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+        </div><br><br>
 
         <!--Danmarks kort-->
 
         <img src="img/ko-kort.png" alt="Danmarks kort" class="ko-kort">
 
         <h2 class="regionheader">Which region leads?</h2>
-        <p class="regiontext">Keep going, you are doing a great job! <b>Midtjylland</b> is lagging behind
+        <p>Keep going, you are doing a great job! <b>Midtjylland</b> is lagging behind
             <b>Hovedstaden</b>, so do an extra good job for the next quarter with your data collection and hopefully,
             your region will be the best.</p>
 
@@ -101,6 +127,14 @@
         </div>
         <div class="barcontainer">
             <div class="skills nordjylland"></div>
+        </div>
+
+        <div class="barflex">
+            <p>Pernilles trang til øl</p>
+            <p>110%</p>
+        </div>
+        <div class="barcontainer">
+            <div class="skills pernille"></div>
         </div>
 
         <!--Leaderboard-->
