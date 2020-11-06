@@ -233,8 +233,18 @@ canvas {
 }
 
 /*Bynavne overskrift over "skills baren" - nordjylland, sjælland osv.*/
-.byer-overskrift {
-  font-family: 'Arla InterFace';
+.byer-overskrift{
+  font-weight: 700;
+  font-size: 5vw;
+  color: #28683E;
+  margin-bottom: 5px;
+}
+
+.procenttext{
+  font-weight: 700;
+  font-size: 5vw;
+  margin-bottom: 5px;
+  color: #66955c;
 }
 
 /* Container for skill bars */
@@ -271,60 +281,31 @@ canvas {
 
 .sjaelland {
   width: 30%;
-  background-image: linear-gradient(to right, darkgreen, olivedrab);
+  background-image: linear-gradient(to right, #28683E, #66955c);
 }
 
 
 .midtjylland {
   width: 62%;
-  background-image: linear-gradient(to right, darkgreen, olivedrab);
+  background-image: linear-gradient(to right, #28683E, #66955c);
 }
 
 
 .syddanmark {
   width: 19%;
-  background-image: linear-gradient(to right, darkgreen, olivedrab);
+  background-image: linear-gradient(to right,#28683E, #66955c);
 }
 
 
 .hovedstaden {
   width: 71%;
-  background-image: linear-gradient(to right, darkgreen, olivedrab);
+  background-image: linear-gradient(to right, #28683E, #66955c);
 }
 
 
 .nordjylland {
   width: 49%;
-  background-image: linear-gradient(to right, darkgreen, olivedrab);
-}
-
-.sjaelland {
-  width: 30%;
-  background-image: linear-gradient(to right, darkgreen, olivedrab);
-}
-
-
-.midtjylland {
-  width: 62%;
-  background-image: linear-gradient(to right, darkgreen, olivedrab);
-}
-
-
-.syddanmark {
-  width: 19%;
-  background-image: linear-gradient(to right, darkgreen, olivedrab);
-}
-
-
-.hovedstaden {
-  width: 71%;
-  background-image: linear-gradient(to right, darkgreen, olivedrab);
-}
-
-
-.nordjylland {
-  width: 49%;
-  background-image: linear-gradient(to right, darkgreen, olivedrab);
+  background-image: linear-gradient(to right, #28683E, #66955c);
 }
 
 
