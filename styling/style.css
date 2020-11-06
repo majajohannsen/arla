@@ -100,7 +100,10 @@ canvas {
 
 
 /* Danmarks kort */
-
+.ko-kort {
+  text-align: center;
+  width: 90%;
+}
 
 /* Procent bars */
 
