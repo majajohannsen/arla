@@ -218,13 +218,7 @@ canvas {
   width: 90%;
 }
 
-.regiontext {
-  text-align: left;
-  width: 90%;
-  margin: auto;
-  margin-top: 1vh;
-  font-size: 15px;
-}
+
 
 /* Procent bars */
 /* Make sure that padding behaves as expected */
