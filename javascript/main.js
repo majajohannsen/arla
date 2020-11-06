@@ -53,7 +53,9 @@ function appendMilkProduction(carbonData) {
         {
           data: data.yourCarbon,
           label: 'Your Data',
-          fill: false,
+          fill: true,
+          pointRadius: 0,
+          showLine: true,
           borderColor: "#66955C",
           backgroundColor: "#66955C",
           pointBackgroundColor: "#006A38",
@@ -65,7 +67,8 @@ function appendMilkProduction(carbonData) {
         {
           label: 'National Data',
           data: data.nationalCarbon,
-          fill: false,
+          fill: true,
+          pointRadius: 0,
           borderColor: "#006A38",
           backgroundColor: "#006A38",
           pointBackgroundColor: "#66955C",
