@@ -105,7 +105,57 @@ canvas {
   width: 90%;
 }
 
+/*text under DK kort*/
+.regionheader{
+  text-align: left;
+  margin: auto;
+  margin-top: 2vh;
+  font-size: 25px;
+  width: 90%;
+}
+.regiontext{
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  margin-top: 1vh;
+  font-size: 15px;
+}
+
 /* Procent bars */
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.barcontainer {
+  width: 85%; /* size of bar */
+  height: 2vh;
+  background-color: #ddd; /* Grey background */
+  border-radius: 50px;
+  margin: auto;
+  margin-bottom: 1vh;
+}
+
+.barflex{
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  margin-left: 6.75vw;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 1px; /* Add top padding */
+  padding-bottom: 1px; /* Add bottom padding */
+  color: white; /* White text color */
+  height: 2vh;
+  border-radius: 50px;
+}
+
+.sjaelland {width: 30%; background-image: linear-gradient(to right, darkgreen, olivedrab);} /* Green */
+.midtjylland {width: 62%; background-image: linear-gradient(to right, darkgreen, olivedrab);} /* Green */
+.syddanmark {width: 19%; background-image: linear-gradient(to right, darkgreen, olivedrab);} /* Green */
+.hovedstaden {width: 71%; background-image: linear-gradient(to right, darkgreen, olivedrab);} /* Green */
+.nordjylland {width: 49%; background-image: linear-gradient(to right, darkgreen, olivedrab);} /* Green */
 
 /* Leaderboard */
 
