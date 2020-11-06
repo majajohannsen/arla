@@ -40,8 +40,7 @@ h1 {
 }
 
 p {
-  font-size: 0.7em;
-
+  font-size: 0.8em;
 }
 
 
@@ -131,8 +130,8 @@ canvas {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 3%;
+  margin-right: 3%;
 
 }
 
