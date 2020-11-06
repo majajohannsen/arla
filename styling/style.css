@@ -225,6 +225,11 @@ canvas {
   box-sizing: border-box
 }
 
+/*Bynavne overskrift over "skills baren" - nordjylland, sjælland osv.*/
+.byer-overskrift{
+  font-family: 'Arla InterFace';
+}
+
 /* Container for skill bars */
 .barcontainer {
   width: 90%;
@@ -262,25 +267,25 @@ canvas {
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .midtjylland {
   width: 62%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .syddanmark {
   width: 19%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .hovedstaden {
   width: 71%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .nordjylland {
   width: 49%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
@@ -291,42 +296,33 @@ canvas {
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .midtjylland {
   width: 62%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .syddanmark {
   width: 19%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .hovedstaden {
   width: 71%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
+
 .nordjylland {
   width: 49%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
-/* Green */
 
-/* Green */
-.pernille {
-  width: 110%;
-  background-image: linear-gradient(to right, darkgreen, olivedrab);
-}
 
-/* Green */
 /* Leaderboard */
-
-
 .leaderboard-grid-yourfarm {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -447,8 +443,8 @@ canvas {
 
 @font-face {
   font-family: Arla InterFace;
-  src: url(../fonts/ArlaInterFace-Light.woff2) format("woff2"),
-    url(../fonts/ArlaInterFace-Light.woff) format("woff");
+  src: url(/styling/fonts/ArlaInterFace-Light.woff2) format("woff2"),
+    url(/styling/fonts/ArlaInterFace-Light.woff) format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -456,8 +452,8 @@ canvas {
 
 @font-face {
   font-family: Arla InterFace;
-  src: url(../fonts/ArlaInterFace-Regular.woff2) format("woff2"),
-    url(../fonts/ArlaInterFace-Regular.woff) format("woff");
+  src: url(/styling/fonts/ArlaInterFace-Regular.woff2) format("woff2"),
+    url(/styling/fonts/ArlaInterFace-Regular.woff) format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -465,8 +461,8 @@ canvas {
 
 @font-face {
   font-family: Arla InterFace;
-  src: url(../fonts/ArlaInterFace-Bold.woff2) format("woff2"),
-    url(../fonts/ArlaInterFace-Bold.woff) format("woff");
+  src: url(/styling/fonts/ArlaInterFace-Bold.woff2) format("woff2"),
+    url(/styling/fonts/ArlaInterFace-Bold.woff) format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -474,8 +470,8 @@ canvas {
 
 @font-face {
   font-family: ARLA STRONG;
-  src: url(../fonts/ARLASTRONG-Regular.woff2) format("woff2"),
-    url(../fonts/ARLASTRONG-Regular.woff) format("woff");
+  src: url(/styling/fonts/ARLASTRONG-Regular.woff2) format("woff2"),
+    url(/styling/fonts/ARLASTRONG-Regular.woff) format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
