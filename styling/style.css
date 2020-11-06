@@ -114,7 +114,7 @@ canvas {
 .seks {
   border-radius: 70px;
   margin-bottom: 2%;
-  box-shadow: 1px 1px 13px 5px rgba(83, 83, 83, 0.1);
+  box-shadow: 5px 5px 32px 5px rgba(129,129,129,0.09);
   text-align: center;
 }
 
@@ -167,7 +167,7 @@ canvas {
 }
 
 /* When the radio button is checked, add a green background */
-.container input:checked~.checkmark {
+.container input:checked ~ .checkmark {
   background-color: #006A38;
 
 }
