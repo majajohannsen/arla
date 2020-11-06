@@ -45,6 +45,7 @@ function appendMilkProduction(carbonData) {
 
   // generate chart
   let chartContainer = document.querySelector('#milkProduction');
+  Chart.defaults.global.defaultFontFamily = 'Arla Interface'
   let chart = new Chart(chartContainer, {
     type: 'line',
     data: {
