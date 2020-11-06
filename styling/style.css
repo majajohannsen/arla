@@ -257,8 +257,9 @@ canvas {
   border-radius: 50px;
 }
 
-width: 30%;
-background-image: linear-gradient(to right, darkgreen, olivedrab);
+.sjaelland {
+  width: 30%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
 
 /* Green */
@@ -284,6 +285,37 @@ background-image: linear-gradient(to right, darkgreen, olivedrab);
   width: 49%;
   background-image: linear-gradient(to right, darkgreen, olivedrab);
 }
+
+.sjaelland {
+  width: 30%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
+.midtjylland {
+  width: 62%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
+.syddanmark {
+  width: 19%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
+.hovedstaden {
+  width: 71%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
+.nordjylland {
+  width: 49%;
+  background-image: linear-gradient(to right, darkgreen, olivedrab);
+}
+
+/* Green */
 
 /* Green */
 .pernille {
