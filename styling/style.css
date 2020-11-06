@@ -226,7 +226,7 @@ canvas {
 }
 
 /*Bynavne overskrift over "skills baren" - nordjylland, sjælland osv.*/
-.byer-overskrift{
+.byer-overskrift {
   font-family: 'Arla InterFace';
 }
 
@@ -323,6 +323,27 @@ canvas {
 
 
 /* Leaderboard */
+
+.leaderboard-header {
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  color: #28683E;
+  margin-block-end: -0.43em;
+  margin-left: 3%;
+  margin-top: 15%;
+
+
+}
+
+.leaderboard-broedtekst {
+  margin-left: 3%;
+  color: #3A4443;
+  line-height: 1.2;
+
+}
+
+
 .leaderboard-grid-yourfarm {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -368,8 +389,6 @@ canvas {
 }
 
 
-
-
 .leaderboard {
   box-shadow: 1px 1px 13px 5px rgba(83, 83, 83, 0.1);
   border-radius: 17px 17px 17px 17px;
@@ -379,8 +398,7 @@ canvas {
 .your-farm-boks {
   box-shadow: 1px 1px 13px 5px rgba(83, 83, 83, 0.1);
   border-radius: 17px 17px 17px 17px;
-
-
+  margin-top: 8%;
 }
 
 .nummer {
@@ -420,7 +438,6 @@ canvas {
   grid-area: 2 / 4 / 3 / 5;
   font-size: 0.4em;
   text-align: center;
-  margin-bottom: -1em;
   color: #3A4443;
 }
 
