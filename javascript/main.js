@@ -45,6 +45,7 @@ function appendMilkProduction(carbonData) {
 
   // generate chart
   let chartContainer = document.querySelector('#milkProduction');
+  Chart.defaults.global.defaultFontFamily = 'Arla Interface'
   let chart = new Chart(chartContainer, {
     type: 'line',
     data: {
@@ -57,7 +58,7 @@ function appendMilkProduction(carbonData) {
           pointRadius: 0,
           showLine: true,
           borderColor: "#66955C80",
-          backgroundColor: "#66955C80",
+          backgroundColor: "#66955C99",
           pointBackgroundColor: "#006A38",
           pointBorderColor: "#006A38",
           pointHoverBackgroundColor: "#006A38",
@@ -70,7 +71,7 @@ function appendMilkProduction(carbonData) {
           fill: true,
           pointRadius: 0,
           borderColor: "#006A3880",
-          backgroundColor: "#006A3880",
+          backgroundColor: "#006A3899",
           pointBackgroundColor: "#66955C",
           pointBorderColor: "#66955C",
           pointHoverBackgroundColor: "#66955C",
