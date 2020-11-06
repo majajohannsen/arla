@@ -7,7 +7,7 @@ body {
     Arial,
     sans-serif;
   font-size: 24px;
-  height: 370vh;
+  height: 360vh;
 }
 
 #milkProduction {
@@ -249,7 +249,7 @@ canvas {
 
 /* Container for skill bars */
 .barcontainer {
-  width: 95%;
+  width: 94.5%;
   /* size of bar */
   height: 2vh;
   background-color: #ddd;
@@ -414,6 +414,7 @@ canvas {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+  padding-top: 1.3%;
 }
 
 .co2-nummer {
