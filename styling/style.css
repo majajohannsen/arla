@@ -233,14 +233,14 @@ canvas {
 }
 
 /*Bynavne overskrift over "skills baren" - nordjylland, sjælland osv.*/
-.byer-overskrift{
+.byer-overskrift {
   font-weight: 700;
   font-size: 5vw;
   color: #28683E;
   margin-bottom: 5px;
 }
 
-.procenttext{
+.procenttext {
   font-weight: 700;
   font-size: 5vw;
   margin-bottom: 5px;
@@ -293,7 +293,7 @@ canvas {
 
 .syddanmark {
   width: 19%;
-  background-image: linear-gradient(to right,#28683E, #66955c);
+  background-image: linear-gradient(to right, #28683E, #66955c);
 }
 
 
@@ -381,6 +381,8 @@ canvas {
 .leaderboard {
   box-shadow: 1px 1px 13px 5px rgba(83, 83, 83, 0.1);
   border-radius: 17px 17px 17px 17px;
+  margin-right: 3%;
+  margin-left: 3%;
 
 }
 
@@ -388,12 +390,14 @@ canvas {
   box-shadow: 1px 1px 13px 5px rgba(83, 83, 83, 0.1);
   border-radius: 17px 17px 17px 17px;
   margin-top: 8%;
+  margin-right: 3%;
+  margin-left: 3%;
 }
 
 .nummer {
   grid-area: 1 / 1 / 3 / 2;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: #28683E;
   font-weight: 700;
   font-style: normal;
@@ -404,7 +408,7 @@ canvas {
 
 .farm-name {
   grid-area: 1 / 2 / 3 / 4;
-  font-size: 1.1em;
+  font-size: 0.9em;
   margin-top: 1.2%;
   color: #3A4443;
   font-weight: 700;
@@ -415,7 +419,7 @@ canvas {
 .co2-nummer {
   grid-area: 1 / 4 / 2 / 5;
   text-align: center;
-  font-size: 1em;
+  font-size: 0.9em;
   color: #28683E;
   font-weight: 700;
   font-style: normal;
