@@ -249,7 +249,7 @@ canvas {
 
 /* Container for skill bars */
 .barcontainer {
-  width: 94%;
+  width: 95%;
   /* size of bar */
   height: 2vh;
   background-color: #ddd;
@@ -261,7 +261,7 @@ canvas {
 
 .barflex {
   display: flex;
-  width: 93%;
+  width: 95%;
   justify-content: space-between;
   margin: auto;
 }
