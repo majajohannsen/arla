@@ -38,21 +38,21 @@
             <p class="under-broedtekst">Get an overview of your data, and compare to other Arla farmers. Select the data
                 you want to view.</p>
 
-            <br>
+            
         </header>
         <!--Co2 graf-->
-        <canvas id="milkProduction"></canvas><br>
-        <canvas id="feedConsumption"></canvas><br>
+        <canvas id="milkProduction"></canvas>
+        <div id="forsvind"><canvas id="feedConsumption"></canvas></div><br>
         <!--Radio buttons-->
 
         <div class="grid-container">
-            <label class="container et">
+            <label class="container et" onclick="carbonFootprint()">
                 <input type="radio" checked="checked" name="radio">
                 <p class="font">Carbon footprint</p>
 
                 <span class="checkmark"></span>
             </label>
-            <label class="container to">
+            <label class="container to" onclick="feedConsumption()">
                 <input type="radio" name="radio">
                 <p class="font">Feed consumption</p>
                 <span class="checkmark"></span>
@@ -199,6 +199,11 @@
             </div>
 
         </div>
+
+
+
+
+
     </section>
 
 
