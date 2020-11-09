@@ -14,6 +14,7 @@ _dataRef.orderBy("quarter").onSnapshot(snapshotData => {
   });
   console.log(_carbonData);
   appendMilkProduction(_carbonData); //call appendMilkProduction with _carbonData as function argument
+  appendFeedConsumption(_carbonData);
 });
 
 
@@ -93,10 +94,10 @@ function prepareFeedConsumption(carbonData) {
   let yourFeed = [];
   let nationalFeed = [];
   carbonData.forEach(data => {
-    if (data.dataType === 'yourFeed') { // condition testing whether the dataType is 'yourData' og 'nationalData'
+    if (data.dataTypeFeed === 'yourFeed') { // condition testing whether the dataType is 'yourData' og 'nationalData'
       yourFeed.push(data.feedConsumption);
       quarters.push(data.quarter);
-    } else if (data.dataType === 'nationalFeed') {
+    } else if (data.dataTypeFeed === 'nationalFeed') {
       nationalFeed.push(data.feedConsumption);
     }
   });
