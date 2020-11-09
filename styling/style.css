@@ -10,11 +10,18 @@ body {
   height: 360vh;
 }
 
+/* Make sure that padding behaves as expected */
+* {
+  box-sizing: border-box
+}
+
 #milkProduction {
   z-index: 5;
 }
 
-#feedConsumption {}
+#forsvind {
+  display: none;
+}
 
 .light {
   font-weight: 300;
@@ -90,20 +97,14 @@ p {
 
 .menu>.aktiv-billede {
   color: #28683E;
-
 }
 
 canvas {
   max-width: 100%;
-
 }
 
 
-
-
 /* Radio buttons */
-
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -125,11 +126,7 @@ canvas {
 
 .et {
   grid-area: 1/1/2/2;
-
 }
-
-
-
 
 .container {
   display: block;
@@ -153,7 +150,6 @@ canvas {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-
 }
 
 /* Create a custom radio button */
@@ -165,7 +161,6 @@ canvas {
   width: 25px;
   background-color: #CFCFCF;
   border-radius: 50%;
-
 }
 
 /* On mouse-over, add a grey background color */
@@ -176,7 +171,6 @@ canvas {
 /* When the radio button is checked, add a green background */
 .container input:checked~.checkmark {
   background-color: #006A38;
-
 }
 
 .container input:checked~.font {
@@ -206,8 +200,6 @@ canvas {
   background: white;
 }
 
-
-
 /* Danmarks kort */
 .ko-kort {
   display: block;
@@ -225,13 +217,8 @@ canvas {
   width: 90%;
 }
 
-
-
 /* Procent bars */
-/* Make sure that padding behaves as expected */
-* {
-  box-sizing: border-box
-}
+
 
 /*Bynavne overskrift over "skills baren" - nordjylland, sjælland osv.*/
 .byer-overskrift {
@@ -476,15 +463,6 @@ canvas {
   src: url(/styling/fonts/ArlaInterFace-Bold.woff2) format("woff2"),
     url(/styling/fonts/ArlaInterFace-Bold.woff) format("woff");
   font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: ARLA STRONG;
-  src: url(/styling/fonts/ARLASTRONG-Regular.woff2) format("woff2"),
-    url(/styling/fonts/ARLASTRONG-Regular.woff) format("woff");
-  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
