@@ -94,10 +94,10 @@ function prepareFeedConsumption(carbonData) {
   let yourFeed = [];
   let nationalFeed = [];
   carbonData.forEach(data => {
-    if (data.dataTypeFeed === 'yourFeed') { // condition testing whether the dataType is 'yourData' og 'nationalData'
+    if (data.dataTypeFeed === 'yourData') { // condition testing whether the dataType is 'yourData' og 'nationalData'
       yourFeed.push(data.feedConsumption);
       quarters.push(data.quarter);
-    } else if (data.dataTypeFeed === 'nationalFeed') {
+    } else if (data.dataTypeFeed === 'nationalData') {
       nationalFeed.push(data.feedConsumption);
     }
   });
