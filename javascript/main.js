@@ -17,7 +17,7 @@ _dataRef.orderBy("quarter").onSnapshot(snapshotData => {
   appendFeedConsumption(_carbonData);
 });
 
-
+// MILKPRODUCTION //
 
 // 2: preparing the data carbonFootprint
 function prepareMilkProductionData(carbonData) {
@@ -85,7 +85,7 @@ function appendMilkProduction(carbonData) {
   });
 }
 
-
+// FEED CONSUMPTION //
 
 
 // 2: preparing the data feedConsumption
