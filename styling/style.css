@@ -14,6 +14,10 @@ body {
   z-index: 5;
 }
 
+#feedConsumption {
+  
+}
+
 .light {
   font-weight: 300;
 }
@@ -96,6 +100,9 @@ canvas {
 
 }
 
+
+
+
 /* Radio buttons */
 
 
@@ -122,6 +129,8 @@ canvas {
   grid-area: 1/1/2/2;
 
 }
+
+
 
 
 .container {
@@ -424,7 +433,7 @@ canvas {
 
 .co2-nummer-tekst {
   grid-area: 2 / 4 / 3 / 5;
-  font-size: 0.4em;
+  font-size: 0.5em;
   text-align: center;
   color: #3A4443;
 }

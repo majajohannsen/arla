@@ -14,11 +14,12 @@ _dataRef.orderBy("quarter").onSnapshot(snapshotData => {
   });
   console.log(_carbonData);
   appendMilkProduction(_carbonData); //call appendMilkProduction with _carbonData as function argument
+  appendFeedConsumption(_carbonData);
 });
 
 
 
-// 2: preparing the data
+// 2: preparing the data carbonFootprint
 function prepareMilkProductionData(carbonData) {
   let quarters = [];
   let yourCarbon = [];
@@ -58,7 +59,7 @@ function appendMilkProduction(carbonData) {
           pointRadius: 0,
           showLine: true,
           borderWidth: 0,
-          backgroundColor: "#66955C",
+          backgroundColor: "rgba(102, 149, 92, 0.8)",
           pointBackgroundColor: "#006A38",
           pointBorderColor: "#006A38",
           pointHoverBackgroundColor: "#006A38",
@@ -71,7 +72,76 @@ function appendMilkProduction(carbonData) {
           fill: true,
           pointRadius: 0,
           borderWidth: 0,
-          backgroundColor: "#006A38",
+          backgroundColor: "rgba(102, 149, 92, 0.5)",
+          pointBackgroundColor: "#66955C",
+          pointBorderColor: "#66955C",
+          pointHoverBackgroundColor: "#66955C",
+          pointHoverBorderColor: "#66955C",
+          type: 'line'
+        }
+      ],
+      labels: data.quarters
+    }
+  });
+}
+
+
+
+
+// 2: preparing the data feedConsumption
+function prepareFeedConsumption(carbonData) {
+  let quarters = [];
+  let yourFeed = [];
+  let nationalFeed = [];
+  carbonData.forEach(data => {
+    if (data.dataTypeFeed === 'yourFeed') { // condition testing whether the dataType is 'yourData' og 'nationalData'
+      yourFeed.push(data.feedConsumption);
+      quarters.push(data.quarter);
+    } else if (data.dataTypeFeed === 'nationalFeed') {
+      nationalFeed.push(data.feedConsumption);
+    }
+  });
+  return {
+    quarters,
+    yourFeed,
+    nationalFeed
+  }
+}
+
+//3: appending the chart
+function appendFeedConsumption(carbonData) {
+  let data = prepareFeedConsumption(carbonData);
+  console.log(data);
+
+  // generate chart
+  let chartContainer = document.querySelector('#feedConsumption');
+  Chart.defaults.global.defaultFontFamily = 'Arla Interface'
+  let chart = new Chart(chartContainer, {
+    type: 'line',
+    data: {
+      datasets: [
+        // first dataset - your data
+        {
+          data: data.yourFeed,
+          label: 'Your Data',
+          fill: true,
+          pointRadius: 0,
+          showLine: true,
+          borderWidth: 0,
+          backgroundColor: "rgba(102, 149, 92, 0.8)",
+          pointBackgroundColor: "#006A38",
+          pointBorderColor: "#006A38",
+          pointHoverBackgroundColor: "#006A38",
+          pointHoverBorderColor: "#006A38",
+        },
+        // second dataset - national data
+        {
+          label: 'National Data',
+          data: data.nationalFeed,
+          fill: true,
+          pointRadius: 0,
+          borderWidth: 0,
+          backgroundColor: "rgba(102, 149, 92, 0.5)",
           pointBackgroundColor: "#66955C",
           pointBorderColor: "#66955C",
           pointHoverBackgroundColor: "#66955C",
