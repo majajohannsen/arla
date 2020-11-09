@@ -13,8 +13,9 @@ _dataRef.orderBy("quarter").onSnapshot(snapshotData => {
     _carbonData.push(data); // push the data object to the global array _carbonData
   });
   console.log(_carbonData);
-  appendMilkProduction(_carbonData); //call appendMilkProduction with _carbonData as function argument
-  appendFeedConsumption(_carbonData);
+  //call appendMilkProduction with _carbonData as function argument
+  carbonFootprint();
+  
 });
 
 // MILKPRODUCTION //
@@ -161,6 +162,7 @@ function appendFeedConsumption(carbonData) {
 function feedConsumption() {
   document.getElementById('forsvind').style.display = "block";
   document.getElementById('milkProduction').style.display = "none";
+  appendFeedConsumption(_carbonData);
 
 }
 
@@ -168,5 +170,6 @@ function feedConsumption() {
 function carbonFootprint() {
   document.getElementById('forsvind').style.display = "none";
   document.getElementById('milkProduction').style.display = "block";
+  appendMilkProduction(_carbonData);
 
 }
