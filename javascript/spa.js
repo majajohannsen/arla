@@ -32,7 +32,7 @@ function navigateTo(pageId){
   location.href = `#${pageId}`;
 }
 
-// set default page or given page by the hash url
+// set progress as default page or given page by the hash url
 // function is called 'onhashchange'
 function pageChange() {
   let page = "progress";

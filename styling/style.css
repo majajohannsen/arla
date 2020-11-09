@@ -299,7 +299,6 @@ canvas {
 
 
 /* Leaderboard */
-
 .under-header {
   font-weight: 700;
   font-style: normal;
@@ -309,17 +308,13 @@ canvas {
   margin-left: 4%;
   margin-top: 15%;
   font-size: 1.2em;
-
-
 }
 
 .under-broedtekst {
   margin-left: 4%;
   color: #3A4443;
   line-height: 1.5;
-
 }
-
 
 .leaderboard-grid-yourfarm {
   display: grid;
@@ -331,7 +326,6 @@ canvas {
   padding-top: 4%;
   border-radius: 17px;
 }
-
 
 .leaderboard-grid {
   display: grid;
@@ -365,13 +359,11 @@ canvas {
   border-radius: 0px 0px 17px 17px;
 }
 
-
 .leaderboard {
   box-shadow: 1px 1px 13px 5px rgba(83, 83, 83, 0.1);
   border-radius: 17px 17px 17px 17px;
   margin-right: 3%;
   margin-left: 3%;
-
 }
 
 .your-farm-boks {
@@ -390,8 +382,6 @@ canvas {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-
-
 }
 
 .farm-name {
@@ -413,7 +403,6 @@ canvas {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-
 }
 
 .co2-nummer-tekst {
@@ -436,10 +425,7 @@ canvas {
 }
 
 
-
-
 /* ARLA FONTS */
-
 @font-face {
   font-family: Arla InterFace;
   src: url(/styling/fonts/ArlaInterFace-Light.woff2) format("woff2"),
