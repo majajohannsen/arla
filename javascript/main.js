@@ -153,3 +153,19 @@ function appendFeedConsumption(carbonData) {
     }
   });
 }
+
+
+
+
+function feedConsumption() {
+  document.getElementById('forsvind').style.display = "block";
+  document.getElementById('milkProduction').style.display = "none";
+
+}
+
+
+function carbonFootprint() {
+  document.getElementById('forsvind').style.display = "none";
+  document.getElementById('milkProduction').style.display = "block";
+
+}
